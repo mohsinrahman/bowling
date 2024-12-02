@@ -1,9 +1,9 @@
 import { describe, it, expect } from "vitest";
-describe(" 'true or false", () => {
-it(" Returns True", () => {
+describe(" true or false", () => {
+it("True", () => {
 expect(true).toBe(true);
 });
-it("Returns False", () => {
+it("False", () => {
 expect(false).toBe(false);
 });
 });
