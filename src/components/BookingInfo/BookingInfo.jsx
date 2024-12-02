@@ -16,12 +16,15 @@ function BookingInfo({ updateBookingDetails }) {
             customClass='booking-info__date'
             name='when'
             handleChange={updateBookingDetails}
+            
+            
           />
           <Input
             label='Time'
             type='time'
             name='time'
             handleChange={updateBookingDetails}
+            
           />
         </section>
         <Input
@@ -30,6 +33,7 @@ function BookingInfo({ updateBookingDetails }) {
           customClass='booking-info__who'
           name='people'
           handleChange={updateBookingDetails}
+          
         />
         <Input
           label='Number of lanes'
@@ -37,6 +41,7 @@ function BookingInfo({ updateBookingDetails }) {
           customClass='booking-info__lanes'
           name='lanes'
           handleChange={updateBookingDetails}
+          
         />
       </form>
     </section>

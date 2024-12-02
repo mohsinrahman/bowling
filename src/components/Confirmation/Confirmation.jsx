@@ -5,6 +5,7 @@ import Navigation from '../Navigation/Navigation';
 import Input from '../Input/Input';
 
 function Confirmation({ confirmationDetails, setConfirmation }) {
+  console.log(confirmationDetails, "confirmationDetails");
   return (
     <section className='confirmation'>
       <Navigation setConfirmation={setConfirmation} />
@@ -17,6 +18,8 @@ function Confirmation({ confirmationDetails, setConfirmation }) {
             customClass='confirmation__input'
             defaultValue={confirmationDetails.when.replace('T', ' ')}
             disabled='disabled'
+            id='date'
+            name='when'
           />
           <Input
             label='Who'
@@ -24,6 +27,8 @@ function Confirmation({ confirmationDetails, setConfirmation }) {
             customClass='confirmation__input'
             defaultValue={confirmationDetails.people}
             disabled='disabled'
+            id='people'
+            name="who"
           />
           <Input
             label='Lanes'
@@ -31,6 +36,8 @@ function Confirmation({ confirmationDetails, setConfirmation }) {
             customClass='confirmation__input'
             defaultValue={confirmationDetails.lanes}
             disabled='disabled'
+            id='lanes'
+            name="Lanes"
           />
           <Input
             label='Booking number'
@@ -38,6 +45,8 @@ function Confirmation({ confirmationDetails, setConfirmation }) {
             customClass='confirmation__input'
             defaultValue={confirmationDetails.id}
             disabled='disabled'
+            id='booking-number'
+            name="booking-number"
           />
           <article className='confirmation__price'>
             <p>Total:</p>
